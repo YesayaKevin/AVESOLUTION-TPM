@@ -1,0 +1,26 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bg-black{
+    background: rgba(0, 0, 0, 0.15);
+}
+
+.nav-brand-svg{
+    height: 50px;
+    width: 50px;
+}
+
+.nav-link{
+    font-size: 36px;
+    font-weight: 500px;
+    line-height: auto;
+    font-style: normal;
+}
+
+.my-30{
+    margin-top: 30px;
+    margin-bottom: 31px;
+}
