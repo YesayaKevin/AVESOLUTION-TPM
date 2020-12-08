@@ -22,7 +22,7 @@ nav .container-fluid{
 .nav-link{
     font-size: 28px;
     font-weight: 500px !important;
-    line-height: auto;
+    line-height: inherit;
     font-style: normal !important;
     color: white !important;
 }
@@ -30,18 +30,101 @@ nav .container-fluid{
 .bg-home{
     background-image: url("/photos/home-bg.png");
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-size: cover;
-    /* filter: brightness(50%); */
     top: 0;
     max-width: 100%;
     width: 100%;
 }
 
+#home .text-yellow{
+    font-size: 72px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: inherit;
+}
+
+#home .text-white{
+    font-style: normal;
+    font-weight: 500;
+    line-height: inherit;
+    font-size: 36px;
+}
 
 .svg-home{
     height: 200px;
     width: 200px;
+    align-self: center;
+}
+
+.bg-about{
+    background-image: url("photos/about-bg.jpg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    /* width: 100%; */
+}
+
+.svg-about{
+    height: 250px;
+    width: 250px;
+    align-self: center;
+}
+
+#aboutus .text-yellow{
+    font-size: 72px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: inherit;
+}
+
+#aboutus .text-white{
+    font-size: 36px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: inherit;
+}
+
+.bg-work{
+    background-color: black;
+    max-width: 100%;
+    width: 100%;
+}
+
+#ourwork .text-yellow{
+    font-weight: 600;
+    font-style: normal;
+    font-size: 72px;
+    line-height: inherit;
+}
+
+.bg-contact{
+    background-image: url("photos/contact-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    /* width: 100%; */
+}
+
+#contactus .text-yellow{
+    font-weight: 600;
+    font-style: normal;
+    font-size: 72px;
+    line-height: inherit;
+}
+
+.text-copy{
+    font-weight: 300;
+    font-size: 24px;
+    font-style: normal;
+}
+
+.svg-contact{
+    height: 75px;
+    width: 75px;
+}
+
+.ave{
+    width: 400px;
 }
 
 @media (max-width: 990px){ 
@@ -81,4 +164,18 @@ nav .container-fluid{
 
 .z-front{
     z-index: 1000;
+}
+
+.w-50{
+    width: 50%;
+}
+
+.p-4r{
+    padding-left: 4rem;
+}
+
+#text-contact-brand{
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
 }
