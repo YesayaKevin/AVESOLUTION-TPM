@@ -30,6 +30,10 @@ h3 {
     color: white !important;
 }
 
+.nav-link:hover{
+    color: #F6C214!important;
+}
+
 .bg-home{
     background-image: url("/photos/home-bg.png");
     /* filter: brightness(25%); */
@@ -51,7 +55,8 @@ h3 {
 }
 
 .bg-white{
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.85);
+    filter: opacity(85%);
     border-radius: 20px;
 }
 
@@ -71,12 +76,21 @@ h3 {
 input{
     margin-top: 1% !important;
     margin-bottom: 1% !important;
+    background-color: #C4C4C4 !important;
+    border: 2px solid grey !important;
 }
 
 textarea{
     margin-top: 1% !important;
     margin-bottom: 1% !important;
+    background-color: #C4C4C4 !important;
+    border: 2px solid grey !important;
 }
+
+#contactus button{
+    margin-bottom: 1%;
+}
+
 .text-copy{
     font-weight: 300;
     font-size: 24px;
@@ -88,7 +102,7 @@ textarea{
 }
 
 .ave{
-    width: 400px;
+    width: 25rem;
 }
 
 .my-30{

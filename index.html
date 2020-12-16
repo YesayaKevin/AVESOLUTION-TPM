@@ -96,12 +96,15 @@
         <div class="container-fluid w-100 bg-contact h-100vh p-0 d-flex justify-content-center">
             <div class="container d-flex flex-column justify-content-even" id="contactus">
                 <h1 class="text-yellow text-center m-0">Contact Us</h1>
-                <div class="container bg-white py-0 px-2">
+                <div class="container bg-white py-0 px-2 w-100">
                     <div class="d-flex flex-column">
-                        <input type="text" name="Name" id="input-name" placeholder="Name">
-                        <input type="email" name="Email" id="input-email" placeholder="Email">
-                        <input type="number" name="Phone" id="input-phone" placeholder="Phone Number">
-                        <textarea class="form-control" name="Message" id="input-message" cols="30" rows="10" placeholder="Message"></textarea>
+                        <form class="needs-validation text-center mx-2">
+                            <input type="text" name="Name" class="form-control" id="input-name" placeholder="Name">
+                            <input type="email" name="Email" class="form-control" id="input-email" placeholder="Email">
+                            <input type="number" name="Phone" class="form-control" id="input-phone" placeholder="Phone Number">
+                            <textarea class="form-control" name="Message" id="input-message" cols="30" rows="10" placeholder="Message"></textarea>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
                     </div>
                 </div>
             </div>
