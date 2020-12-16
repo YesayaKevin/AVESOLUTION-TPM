@@ -23,7 +23,7 @@
             </svg>
         </a>
         <button class="navbar-toggler ml-auto border-0 px-0" type="button" data-toggle="collapse" data-target="#navbarCollapsedContent">
-            <svg width="50" height="50" fill="#fff" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+            <svg width="50" height="50" fill="#ffffff" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapsedContent">
             <ul class="navbar-nav ml-auto text-center">
@@ -36,8 +36,8 @@
     </nav>
     <main>
         <!-- Home -->
-        <div class="container-fluid bg-home d-flex flex-column justify-content-center" id="home">
-            <div class="container-md mr-auto pl-3 col-6">
+        <div class="container-fluid bg-home h-100vh d-flex flex-column justify-content-center" id="home">
+            <div class="container-md mr-auto pl-3 col-6 ml-0">
                 <div class="h-100 p-5 d-flex flex-column justify-content-even align-items-center">
                     <svg class="spin" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200" height="200"
                     viewBox="0 0 32 32" style="enable-background:new 0 0 32 32; fill:#ffffff;" space="preserve">
@@ -58,7 +58,7 @@
             </div>
         </div>
         <!-- About Us -->
-        <div class="container-fluid bg-about d-flex flex-column justify-content-center align-content-center">
+        <div class="container-fluid bg-about h-100vh d-flex flex-column justify-content-center align-content-center">
             <div class="container h-100 m-auto d-flex flex-column justify-content-even text-center" id="aboutus">
                 <h1 class="text-yellow p-0 m-0">About Us</h1>
                 <div>
@@ -77,36 +77,39 @@
             </div>
         </div>
         <!-- Our Work -->
-        <div class="container-fluid w-100 bg-work p-0 d-flex flex-column justify-content-center" id="ourwork">
-            <div class="container">
-                <h1 class="text-yellow text-center m-0">Our Work</h1>
-                <div class="images">
-                    <div><img class="w-100" src="photos/work-1.jpg" alt="surf"></div>
-                    <div>
-                        <div><img class="w-100" src="photos/work-2.jpg" alt="street"></div>
-                        <div><img class="w-100" src="photos/work-3.jpg" alt="car"></div>
+        <div class="container-fluid bg-work h-100vh d-flex flex-column justify-content-center align-content-center" id="ourwork">
+            <div class="container h-100 d-flex flex-column justify-content-even text-center">
+                <h1 class="text-yellow text-center mt-3">Our Work</h1>
+                <div class="images d-flex">
+                    <div><img class="w-100 h-100p p-2" src="photos/work-1.jpg" alt="surf"></div>
+                        <div>
+                            <div><img class="w-100 h-50p p-2" src="photos/work-2.jpg" alt="street"></div>
+                        <div><img class="w-100 h-50p p-2" src="photos/work-3.jpg" alt="car"></div>
                     </div>
                     <div>
-                        <img class="w-100" src="photos/work-4.jpg" alt="bridge">
+                        <img class="w-100 h-100p p-2" src="photos/work-4.jpg" alt="bridge">
                     </div>
                 </div>
             </div>
         </div>
         <!-- Contact Us -->
-        <div class="container-fluid w-100 bg-contact p-0 d-flex flex-column justify-content-center">
-            <div class="container d-flex flex-column" id="contactus">
+        <div class="container-fluid w-100 bg-contact h-100vh p-0 d-flex justify-content-center">
+            <div class="container d-flex flex-column justify-content-even" id="contactus">
                 <h1 class="text-yellow text-center m-0">Contact Us</h1>
-                <div class="container ">
-                    <form>
-                        
-                    </form>
+                <div class="container bg-white py-0 px-2">
+                    <div class="d-flex flex-column">
+                        <input type="text" name="Name" id="input-name" placeholder="Name">
+                        <input type="email" name="Email" id="input-email" placeholder="Email">
+                        <input type="number" name="Phone" id="input-phone" placeholder="Phone Number">
+                        <textarea class="form-control" name="Message" id="input-message" cols="30" rows="10" placeholder="Message"></textarea>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
     <footer class="container-fluid bg-work w-100 d-flex flex-column justify-content-center">
-        <div class="container justify-content-lg-between mt-5">
-            <div>
+        <div class="container justify-content-lg-between mt-5 d-flex flex-row">
+            <div class="d-flex flex-column">
                 <p class="text-white text-copy">Design and Manage by:</p>
                 <div class="d-flex flex-row">
                     <div>
@@ -124,7 +127,7 @@
                     <h3 class="text-yellow ml-3 font-weight-bold">Aperture Photos</h3>
                 </div>
             </div>
-            <div class="mb-3">
+            <div class="d-flex flex-column mb-3">
                 <p class="text-white text-copy">Created by:</p>
                 <img src="photos/ave.png" alt="ave.png" class="ave">
             </div>
