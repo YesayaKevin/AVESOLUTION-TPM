@@ -27,10 +27,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapsedContent">
             <ul class="navbar-nav ml-auto text-center">
-                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#aboutus">About Us</a></li>
-                <li class="nav-item"><a class="nav-link" href="#ourwork">Our Work</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contactus">Contact Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" id="home-nav">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#aboutus" id="aboutus-nav">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#ourwork" id="ourwork-nav">Our Work</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contactus" id="contactus-nav">Contact Us</a></li>
             </ul>
         </div>
     </nav>
@@ -77,33 +77,35 @@
             </div>
         </div>
         <!-- Our Work -->
-        <div class="container-fluid bg-work h-100vh d-flex flex-column justify-content-center align-content-center" id="ourwork">
+        <div class="container-fluid bg-work d-flex flex-column justify-content-center align-content-center py-5 min-vh-100" id="ourwork">
             <div class="container h-100 d-flex flex-column justify-content-even text-center">
-                <h1 class="text-yellow text-center mt-3">Our Work</h1>
-                <div class="images d-flex">
-                    <div><img class="w-100 h-100p p-2" src="photos/work-1.jpg" alt="surf"></div>
-                        <div>
-                            <div><img class="w-100 h-50p p-2" src="photos/work-2.jpg" alt="street"></div>
-                        <div><img class="w-100 h-50p p-2" src="photos/work-3.jpg" alt="car"></div>
+                <h1 class="text-yellow text-center mt-3 pb-5">Our Work</h1>
+                <div class="images d-flex pt-5">
+                    <div class="cols-4">
+                        <img class="w-100 h-100" src="photos/work-1.jpg" alt="surf">
                     </div>
-                    <div>
-                        <img class="w-100 h-100p p-2" src="photos/work-4.jpg" alt="bridge">
+                    <div class="cols-4">
+                        <div class="h-50"><img class="w-100 h-100 pb-1" src="photos/work-2.jpg" alt="street"></div>
+                        <div class="h-50"><img class="w-100 h-100 pt-1" src="photos/work-3.jpg" alt="car"></div>
+                    </div>
+                    <div class="cols-4">
+                        <img class="w-100 h-100" src="photos/work-4.jpg" alt="bridge">
                     </div>
                 </div>
             </div>
         </div>
         <!-- Contact Us -->
-        <div class="container-fluid w-100 bg-contact h-100vh p-0 d-flex justify-content-center">
+        <div class="container-fluid bg-contact h-100vh p-0 d-flex justify-content-center">
             <div class="container d-flex flex-column justify-content-even" id="contactus">
                 <h1 class="text-yellow text-center m-0">Contact Us</h1>
-                <div class="container bg-white py-0 px-2 w-100">
-                    <div class="d-flex flex-column">
-                        <form class="needs-validation text-center mx-2">
-                            <input type="text" name="Name" class="form-control" id="input-name" placeholder="Name">
-                            <input type="email" name="Email" class="form-control" id="input-email" placeholder="Email">
-                            <input type="number" name="Phone" class="form-control" id="input-phone" placeholder="Phone Number">
-                            <textarea class="form-control" name="Message" id="input-message" cols="30" rows="10" placeholder="Message"></textarea>
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                <div class="bg-white85 mx-auto py-2 px-4 contactusbox">
+                    <div class="d-flex flex-column w-100">
+                        <form class="needs-validation text-center mx-2" id="contactus-form">
+                            <input type="text" name="Name" class="form-control" id="input-name" placeholder="Name" required>
+                            <input type="email" name="Email" class="form-control" id="input-email" placeholder="Email" required>
+                            <input type="text" name="Phone" class="form-control" id="input-phone" placeholder="Phone Number" required>  
+                            <textarea class="form-control" name="Message" id="input-message" cols="30" rows="10" placeholder="Message" required></textarea>
+                            <button type="submit" class="btn btn-primary bg-yellow">Submit</button>
                         </form>
                     </div>
                 </div>
@@ -139,5 +141,6 @@
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script><script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

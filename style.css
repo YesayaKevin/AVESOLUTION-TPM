@@ -35,7 +35,7 @@ h3 {
 }
 
 .bg-home{
-    background-image: url("/photos/home-bg.png");
+    background-image: url("photos/home-bg.png");
     /* filter: brightness(25%); */
     background-size: cover;
 }
@@ -54,10 +54,18 @@ h3 {
     background-size: cover;
 }
 
-.bg-white{
+.bg-white85{
     background: rgba(255, 255, 255, 0.85);
-    filter: opacity(85%);
+    /* background-color: transparent !important; */
     border-radius: 20px;
+}
+
+.bg-yellow{
+    background-color: #F6C214 !important;
+    border-radius: 50px !important;
+    color: black !important;
+    min-width: 100px;
+    border: none !important;
 }
 
 .container-fluid {
@@ -73,22 +81,25 @@ h3 {
     width: calc(100% / 3);
 }
 
-input{
+input , textarea{
     margin-top: 1% !important;
     margin-bottom: 1% !important;
     background-color: #C4C4C4 !important;
     border: 2px solid grey !important;
-}
-
-textarea{
-    margin-top: 1% !important;
-    margin-bottom: 1% !important;
-    background-color: #C4C4C4 !important;
-    border: 2px solid grey !important;
+    opacity: 1;
 }
 
 #contactus button{
     margin-bottom: 1%;
+}
+
+.contactusbox{
+    width: 50%;
+}
+
+.cols-4{
+    width: calc(100% / 3);
+    padding: 0.25rem;
 }
 
 .text-copy{
@@ -119,7 +130,7 @@ textarea{
 }
 
 .text-yellow{
-    color: #F6C214;
+    color: #F6C214 !important;
 }
 
 .text-white{
@@ -160,6 +171,15 @@ textarea{
         flex-direction: column !important;
     }
 
+    .cols-4{
+        width: 100%;
+        padding: 0.25rem;
+    }
+
+    .contactusbox{
+        width: 100%;
+    }
+
     footer .container{
         display: flex !important;
         flex-direction: column !important;
@@ -197,12 +217,4 @@ textarea{
 
 .h-100vh{
     height: 100vh;
-}
-
-.h-100p{
-    height: 100%;
-}
-
-.h-50p{
-    height: 50%;
 }
